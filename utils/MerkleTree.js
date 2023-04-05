@@ -11,7 +11,7 @@ class MerkleTree {
     return bytesToHex(this._getRoot(this.leaves));
   }
 
-  getProof(index, layer = this.leaves, proof = []) {
+  getProof(index, layer = this.leaves, proof = []) {    
     if (layer.length === 1) {
       return proof;
     }
